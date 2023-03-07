@@ -1,0 +1,13 @@
+## Nornir Config File 
+---
+inventory:
+    plugin: "SimpleInventory" 
+    options: 
+      host_file: "/home/marcelo/projetos/nornir/inventory/hosts.yml"
+      group_file: "/home/marcelo/projetos/nornir/inventory/groups.yml"
+      defaults_file: "/home/marcelo/projetos/nornir/inventory/defaults.yml"
+
+runner:
+    plugin: threaded
+    options:
+      num_workers: 20
